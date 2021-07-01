@@ -3,7 +3,7 @@
 [Grace Zhang](), [Linghan Zhong](https://thoughtp0lice.github.io/), [Youngwoon Lee](https://youngwoon.github.io), [Joseph J. Lim](https://clvrai.com) at [USC CLVR lab](https://clvrai.com)<br/>
 [[Project website]()] [[Paper]()]
 
-This project is a PyTorch implementation of [Policy Transfer across Visual and Dynamics Domain Gaps via Iterative Grounding](), which is published in RSS 2021.
+This project is a PyTorch implementation of **Policy Transfer across Visual and Dynamics Domain Gaps via Iterative Grounding** (RSS 2021).
 
 <p align="center">
     <img src="docs/img/teaser_animation.gif" width="500">
