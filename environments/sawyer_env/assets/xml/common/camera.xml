@@ -1,0 +1,12 @@
+<mujocoinclude>
+    <camera pos="0 0 3.2" name="topview" />
+    <camera pos="0.75 0 2.0" name="tabletopview" quat="-0.7 0 0 0.7" />
+    <camera mode="fixed" name="frontview" pos="3.16 0.0 2.15" quat="0.56 0.43 0.43 0.56" />
+    <camera mode="fixed" name="zoomview" pos="2.56 0.0 1.25" quat="0.5 0.47 0.47 0.5" />
+    <camera mode="fixed" name="visview" pos="1.86 0.0 2.85" quat="0.76 0.23 0.23 0.76" />
+    <camera mode="fixed" name="shiftview" pos="2.0 0.2 2.85" quat="0.76 0.23 0.3 0.76" />
+    <camera mode="fixed" name="shiftview2" pos="2.0 0.4 2.5" quat="0.76 0.2 0.4 0.76" />
+    <camera mode="fixed" name="visviewzoom" pos="1.2 0.0 2.0" quat="0.76 0.23 0.23 0.76" />
+    <camera mode="fixed" name="shiftview2zoom" pos="1.5 0.4 2.0" quat="0.76 0.2 0.4 0.76" />
+    <camera mode="fixed" name="shiftview3zoom" pos="1.5 0.2 2.0" quat="0.76 0.2 0.3 0.76" />
+</mujocoinclude>

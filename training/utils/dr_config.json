@@ -1,0 +1,398 @@
+{
+    "default":{
+        "tex_mod": {
+            "active": false
+        },
+        "color_mod": {
+            "active": false
+        },
+        "light_mod": {
+            "active": false
+        },
+        "camera_mod":{
+            "active": false
+        },
+        "dynamics_mod":{
+            "active": false
+        }
+    },
+    "WK_min":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["skybox"],
+            "modes":["rgb"]
+        },
+        "color_mod": {
+            "active": false
+        },
+        "light_mod": {
+            "active": true,
+            "color_range": [[0.0, 1.0], [0, 1.0], [0.0, 1.0]],
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0.0, 0.3],
+            "diffuse_range": [0.2, 0.8],
+            "ambient_range": [0.2, 0.8],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": false
+        },
+        "dynamics_mod":{
+            "active": true,
+            "mass_targets":{
+                "torso":{
+                    "range": [3, 6],
+                    "inerta_reset": true
+                }
+            }
+        }
+    },
+    "WK_max":{
+        "tex_mod": {
+            "active": true,
+            "geoms": ["skybox", "floor"],
+            "modes": ["checker", "gradient", "rgb", "noise"]
+        },
+        "color_mod": {
+            "active": true,
+            "partial_body_change":{
+                "parts": [[1,2,3,4]]
+            }
+        },
+        "light_mod": {
+            "active": true,
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0, 0.3],
+            "diffuse_range": [0.2, 1],
+            "ambient_range": [0.2, 1],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": true,
+            "use_default": false,
+            "cam_name": "track",
+            "camera_focus": "thigh",
+            "fovy_range": [45, 45],
+            "pos_change_range": [[-0.7, 0.7], [-0.7, 0.7], [-0.7, 0.7]],
+            "ang_jitter_range": [[-2, 2], [-2, 2], [-2, 2]]
+        },
+        "dynamics_mod":{
+            "active": true,
+            "mass_targets":{
+                "torso":{
+                    "range": [3, 11],
+                    "inerta_reset": true
+                }
+            }
+        }
+    },
+    "HP_max":{
+        "tex_mod": {
+            "active": true,
+            "geoms": ["skybox", "floor"],
+            "modes": ["checker", "gradient", "rgb", "noise"]
+        },
+        "color_mod": {
+            "active": true,
+            "full_body_change": true
+        },
+        "light_mod": {
+            "active": true,
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0, 0.3],
+            "diffuse_range": [0.2, 1],
+            "ambient_range": [0.2, 1],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": true,
+            "use_default": false,
+            "cam_name": "track",
+            "fovy_range": [45, 45],
+            "pos_change_range": [[-0.05, 0.05], [-0.05, 0.05], [-0.05, 0.05]],
+            "ang_jitter_range": [[-2, 2], [-2, 2], [-2, 2]]
+        },
+        "dynamics_mod":{
+            "active": true,
+            "mass_targets":{
+                "torso":{
+                    "range": [3, 6.6],
+                    "inerta_reset": true
+                }
+            }
+        }
+    },
+    "IP_min":{
+        "tex_mod": {
+            "active": true,
+            "geoms": ["skybox"],
+            "modes": ["rgb"]
+        },
+        "color_mod": {
+            "active": true
+        },
+        "light_mod": {
+            "active": true,
+            "color_range": [[0.0, 1.0], [0, 1.0], [0.0, 1.0]],
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0.0, 0.3],
+            "diffuse_range": [0.2, 0.8],
+            "ambient_range": [0.2, 0.8],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": false
+        },
+        "dynamics_mod":{
+            "active": true,
+            "mass_targets":{
+                "pole":{
+                    "range": [4, 55],
+                    "inerta_reset": true
+                }
+            }
+        }
+    },
+    "IP_max":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["skybox"],
+            "modes": ["checker", "gradient", "rgb", "noise"]
+        },
+        "color_mod": {
+            "active": true
+        },
+        "light_mod": {
+            "active": true,
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0, 0.3],
+            "diffuse_range": [0.2, 1],
+            "ambient_range": [0.2, 1],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": true,
+            "use_default": true,
+            "veiwer_cam_param_targets":{
+                "azimuth": [90, 100],
+                "elevation" : [-55, -45]
+            },
+            "fovy_range": [45, 45]
+        },
+        "dynamics_mod":{
+            "active": true,
+            "mass_targets":{
+                "pole":{
+                    "range": [4, 220],
+                    "inerta_reset": true
+                }
+            }
+        }
+    },
+    "FR_max":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["floor0_geom"],
+            "modes": ["checker", "gradient", "rgb", "noise"]
+        },
+        "color_mod": {
+            "active": true,
+            "geoms_change":["table"]
+        },
+        "light_mod": {
+            "active": true,
+            "pos_range": [[0, 0], [0, 0], [4.0, 4.0]],
+            "spec_range": [0.1, 0.4],
+            "diffuse_range": [0.0, 0.8],
+            "ambient_range": [0.0, 0.2],
+            "head_light": false
+        },
+        "camera_mod":{
+            "active": true,
+            "use_default": true,
+            "fovy_range": [42,47],
+            "veiwer_cam_param_targets":{
+                "distance": [1.0, 1.2],
+                "azimuth": [165, 195],
+                "elevation": [-35, -35]
+            }
+        },
+        "dynamics_mod":{
+            "active": true,
+            "action_mod":{
+                "theta":[-50,50],
+                "bias": [-0.55, 0]
+            }
+        }
+    },
+    "FR_min":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["floor0"],
+            "modes": ["checker", "gradient", "rgb", "noise"]
+        },
+        "color_mod": {
+            "active": true,
+            "geoms_change":["table"]
+        },
+        "light_mod": {
+            "active": true,
+            "pos_range": [[0, 0], [0, 0], [4.0, 4.0]],
+            "spec_range": [0.1, 0.4],
+            "diffuse_range": [0.0, 0.8],
+            "ambient_range": [0.0, 0.2],
+            "head_light": false
+        },
+        "camera_mod":{
+            "active": true,
+            "use_default": true,
+            "fovy_range": [45,45],
+            "veiwer_cam_param_targets":{
+                "distance": [1.0, 1.2],
+                "azimuth": [165, 180],
+                "elevation": [-35, -35]
+            }
+        },
+        "dynamics_mod":{
+            "active": true,
+            "action_mod":{
+                "theta":[-30,30],
+                "bias": [-0.55, 0.55]
+            }
+        }
+    },
+    "SP_max":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["FLOOR"],
+            "modes": ["checker", "gradient", "rgb", "noise", "imgs"]
+        },
+        "color_mod": {
+            "active": true,
+            "geoms_change":["cylinder_geom"]
+        },
+        "light_mod": {
+            "active": true,
+            "pos_range": [[-1.5, -0.5], [-0.6, 0.6], [1.0, 1.5]],
+            "spec_range": [0.0, 1],
+            "diffuse_range": [0.2, 1],
+            "ambient_range": [0.2, 1],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": true,
+            "use_default": false,
+            "cam_name": "visviewzoom",
+            "fovy_range": [42, 48],
+            "pos_change_range": [[-0.07, 0.07], [-0.07, 0.07], [-0.07, 0.07]],
+            "ang_jitter_range": [[-4, 4], [-4, 4], [-4, 4]]
+        },
+        "dynamics_mod":{
+            "active": true,
+            "friction_targets":{
+                "cylinder_geom":{
+                    "range":[2, 4.4]
+                }
+            },
+            "mass_targets":{
+                "cylinder_body":{
+                    "range":[0.01, 0.055],
+                    "inerta_reset": false
+                }
+            }
+        }
+    },
+    "SP_min":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["FLOOR"],
+            "modes":["rgb"]
+        },
+        "color_mod": {
+            "active": false
+        },
+        "light_mod": {
+            "active": true,
+            "color_range": [[0.2, 1.0], [0.2, 1.0], [0.2, 1.0]],
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0.2, 1],
+            "diffuse_range": [0.2, 1],
+            "ambient_range": [0.2, 1],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": false
+        },
+        "dynamics_mod":{
+            "active": true,
+            "friction_targets":{
+                "cylinder_geom":{
+                    "range":[2, 3.3]
+                }
+            },
+            "mass_targets":{
+                "cylinder_body":{
+                    "range":[0.01, 0.033],
+                    "inerta_reset": false
+                }
+            }
+        }
+    },
+    "HC_max":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["skybox", "floor"],
+            "modes": ["checker", "gradient", "rgb", "noise"]
+        },
+        "color_mod": {
+            "active": true,
+            "full_body_change": true
+        },
+        "light_mod": {
+            "active": true,
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0, 0.3],
+            "diffuse_range": [0.2, 1],
+            "ambient_range": [0.2, 1],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": true,
+            "use_default": false,
+            "cam_name": "track",
+            "fovy_range": [45, 45],
+            "pos_change_range": [[-0.05, 0.05], [-0.05, 0.05], [-0.05, 0.05]],
+            "ang_jitter_range": [[-3, 3], [-3, 3], [-3, 3]]
+        },
+        "dynamics_mod":{
+            "active": true,
+            "armature_multiplier": [0.8, 4.4]
+        }
+    },
+    "HC_min":{
+        "tex_mod": {
+            "active": true,
+            "geoms":["skybox"],
+            "modes":["rgb"]
+        },
+        "color_mod": {
+            "active": false
+        },
+        "light_mod": {
+            "active": true,
+            "color_range": [[0.0, 1.0], [0, 1.0], [0.0, 1.0]],
+            "pos_range": [[-0.6, 0.6], [-0.6, 0.6], [1.3, 1.7]],
+            "spec_range": [0.2, 1],
+            "diffuse_range": [0.2, 1],
+            "ambient_range": [0.2, 1],
+            "head_light": true
+        },
+        "camera_mod":{
+            "active": false
+        },
+        "dynamics_mod":{
+            "active": true,
+            "armature_multiplier": [0.8, 2.5]
+        }
+    }
+}
