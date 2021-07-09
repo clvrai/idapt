@@ -1,7 +1,7 @@
 # Policy Transfer across Visual and Dynamics Domain Gaps via Iterative Grounding
 
-[Grace Zhang](), [Linghan Zhong](https://thoughtp0lice.github.io/), [Youngwoon Lee](https://youngwoon.github.io), [Joseph J. Lim](https://clvrai.com) at [USC CLVR lab](https://clvrai.com)<br/>
-[[Project website]()] [[Paper]()]
+[Grace Zhang](https://gracehzhang.github.io/), [Linghan Zhong](https://thoughtp0lice.github.io/), [Youngwoon Lee](https://youngwoon.github.io), [Joseph J. Lim](https://clvrai.com) at [USC CLVR lab](https://clvrai.com)<br/>
+[[Project website](https://clvrai.com/idapt)] [[Paper](http://www.roboticsproceedings.org/rss17/p006.pdf)] [[arXiv](https://arxiv.org/abs/2107.00339)]
 
 This project is a PyTorch implementation of **Policy Transfer across Visual and Dynamics Domain Gaps via Iterative Grounding** (RSS 2021).
 
@@ -57,8 +57,10 @@ The ability to transfer a policy from one environment to another is a promising 
 
 ### Unity app installation
 
-Adding `--unity True` to the command  will automatically download the Unity app.
-For headless servers, virtual display needs to be executed (e.g., `sudo /usr/bin/X :1`) and specify the virtual display id (e.g.  `--virtual_display :1`)
+Adding `--unity True` to the command will automatically download the Unity app.
+
+For headless servers, virtual display needs to be executed (e.g., `sudo /usr/bin/X :1`) and specify the virtual display id (e.g.  `--virtual_display :1`).
+
 In macOS, if the app does not launch due to the not verified developer, go to the directory `./binary`, right-click `Furniture.app`, and click `Open` once. Then, the app can be launched by our environment without error.
 
 
@@ -189,6 +191,9 @@ In macOS, if the app does not launch due to the not verified developer, go to th
   author={Grace Zhang and Linghan Zhong and Youngwoon Lee and Joseph J. Lim},
   booktitle={Robotics: Science and Systems},
   year={2021},
+  address={Virtual},
+  month={July},
+  DOI={10.15607/RSS.2021.XVII.006}
 }
 ```
 
